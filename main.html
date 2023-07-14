@@ -9,20 +9,20 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="post">
         <h1>Car Insurance Form</h1>
         <div>
             <label for="name" > Name*</label>
-            <input type="text" name="text" id="text" placeholder="Name" required> 
+            <input type="text" name="text" id="name" placeholder="Name" required> 
         </div>
         <div>
             <label for="email" > Email*</label>
-            <input type="email" placeholder="Email@gmail.com">
+            <input type="email" id="email" placeholder="Email@gmail.com">
         </div>
         <div>
             <label for="Gender" > Gender*</label>
-            <label><input type="radio" name="Gender" value="male">Male</label required>
-            <label><input type="radio" name="Gender" value="female">Female</label required>
+            <label><input type="radio" name="gender" value="male">Male</label required>
+            <label><input type="radio" name="gender" value="female">Female</label required>
         </div>
         <div>
             <label for="cars" > Car Brands</label>
@@ -34,18 +34,18 @@
         </div>
         <div>
             <label for="Car Age*" > Car Age*</label>
-            <input type="number" name="number" id="number" min="1" max="15" required>
+            <input type="number" name="number" id="carage" min="1" max="15" required>
         </div>
         <div>
             <label for="Date of Purchase" > Date of Purchase(dop)*</label>
-            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="dop" required>
         </div>
         <div>
             <label for="password" > Password*</label>
             <input type="password" name="password" id="password" required>
         </div>
 
-        <input type="submit">
+        <button type="submit">Submit</button>
         
     </form>
     <script type="text/javascript" src="./script.js">
